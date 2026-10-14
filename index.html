@@ -3,61 +3,67 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Kelly's Consulting - Natural Health & Education</title>
+    <title>Kelly Dearie | Educational Consulting & Tutoring</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
     <style>
-        .hero-bg { background-image: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url('https://picsum.photos/id/1015/2000/1200'); background-size: cover; background-position: center; }
+        .hero-bg { 
+            background: linear-gradient(rgba(255,255,255,0.85), rgba(255,255,255,0.9)), 
+                        url('https://images.unsplash.com/photo-1503676260728-1c00da094a0b?ixlib=rb-4.0.3&auto=format&fit=crop&w=2000&q=80');
+            background-size: cover; 
+            background-position: center; 
+        }
         .nav-link { transition: all 0.3s; }
-        .nav-link:hover { color: #10b981; transform: translateY(-2px); }
+        .nav-link:hover { color: #0f766e; }
     </style>
 </head>
 <body class="bg-stone-50 text-stone-800 font-sans">
+
     <!-- NAVBAR -->
-    <nav class="bg-white shadow-md sticky top-0 z-50">
+    <nav class="bg-white shadow-sm sticky top-0 z-50">
         <div class="max-w-6xl mx-auto px-6 py-4 flex items-center justify-between">
-            <!-- Logo -->
             <a href="index.html" class="flex items-center gap-3">
-                <img src="logo.png" alt="Kelly's Consulting Logo" class="h-12 w-auto"> <!-- UPLOAD YOUR LOGO AS "logo.png" -->
-                <span class="text-2xl font-semibold text-emerald-700">Kelly's Consulting</span>
+                <img src="logo.png" alt="Kelly Dearie Educational Consulting" class="h-14 w-auto">
             </a>
 
-            <!-- Desktop Menu -->
-            <div class="hidden md:flex items-center gap-8 text-lg">
-                <a href="index.html" class="nav-link font-medium">Home</a>
-                <a href="classes.html" class="nav-link font-medium">Classes & Workshops</a>
-                <a href="coaching.html" class="nav-link font-medium">Health Coaching</a>
-                <a href="consulting.html" class="nav-link font-medium">Educational Consulting & Tutoring</a>
+            <div class="hidden md:flex items-center gap-8 text-base font-medium">
+                <a href="index.html" class="nav-link text-teal-800">Home</a>
+                <a href="consulting.html" class="nav-link">Educational Consulting & Tutoring</a>
+                <a href="about.html" class="nav-link">About</a>
+                <a href="#contact" class="nav-link">Contact</a>
             </div>
 
-            <!-- Mobile Hamburger -->
-            <button id="mobile-menu-btn" class="md:hidden text-3xl text-emerald-700">
+            <button id="mobile-menu-btn" class="md:hidden text-2xl text-teal-800">
                 <i class="fa-solid fa-bars"></i>
             </button>
         </div>
 
-        <!-- Mobile Menu -->
         <div id="mobile-menu" class="hidden md:hidden bg-white border-t py-4">
-            <div class="flex flex-col gap-4 px-6 text-lg">
+            <div class="flex flex-col gap-4 px-6 text-base">
                 <a href="index.html" class="nav-link">Home</a>
-                <a href="classes.html" class="nav-link">Classes & Workshops</a>
-                <a href="coaching.html" class="nav-link">Health Coaching</a>
                 <a href="consulting.html" class="nav-link">Educational Consulting & Tutoring</a>
+                <a href="about.html" class="nav-link">About</a>
+                <a href="#contact" class="nav-link">Contact</a>
             </div>
         </div>
     </nav>
 
     <!-- HERO -->
-    <header class="hero-bg h-screen flex items-center text-white">
-        <div class="max-w-6xl mx-auto px-6 text-center">
-            <h1 class="text-5xl md:text-7xl font-bold mb-6">Natural Healing • Education • Empowerment</h1>
-            <p class="text-xl md:text-2xl max-w-2xl mx-auto mb-10">
-                <!-- REPLACE THIS WITH YOUR SHORT DESCRIPTION -->
-                Personalized health coaching, transformative workshops, and educational support in Mount Shasta, California.
+    <header class="hero-bg py-24 md:py-32">
+        <div class="max-w-5xl mx-auto px-6 text-center">
+            <h1 class="text-4xl md:text-5xl font-semibold text-teal-900 mb-6 leading-tight">
+                Educational Consulting & Tutoring
+            </h1>
+            <p class="text-xl md:text-2xl text-stone-700 max-w-3xl mx-auto mb-10 leading-relaxed">
+                Personalized academic support, curriculum design, and joyful learning experiences for students and families in Mount Shasta and beyond.
             </p>
             <div class="flex flex-col sm:flex-row gap-4 justify-center">
-                <a href="coaching.html" class="bg-emerald-600 hover:bg-emerald-700 px-10 py-4 rounded-full text-lg font-medium transition">Start Health Coaching</a>
-                <a href="classes.html" class="bg-white text-emerald-700 hover:bg-stone-100 px-10 py-4 rounded-full text-lg font-medium transition">Browse Workshops</a>
+                <a href="consulting.html" class="bg-teal-700 hover:bg-teal-800 text-white px-8 py-3.5 rounded-full text-lg font-medium transition">
+                    Explore Services
+                </a>
+                <a href="#contact" class="bg-white text-teal-800 border border-teal-700 hover:bg-teal-50 px-8 py-3.5 rounded-full text-lg font-medium transition">
+                    Get in Touch
+                </a>
             </div>
         </div>
     </header>
@@ -65,86 +71,86 @@
     <!-- SERVICES OVERVIEW -->
     <section class="py-20 bg-white">
         <div class="max-w-6xl mx-auto px-6">
-            <h2 class="text-4xl font-semibold text-center mb-12">My Services</h2>
+            <h2 class="text-3xl md:text-4xl font-semibold text-center text-teal-900 mb-4">How I Can Help</h2>
+            <p class="text-center text-stone-600 max-w-2xl mx-auto mb-14">
+                Drawing on years of classroom teaching, curriculum design, and program development for homeschooling families and non-profits.
+            </p>
+
             <div class="grid md:grid-cols-3 gap-8">
-                <!-- Service 1 -->
-                <a href="classes.html" class="group bg-stone-50 rounded-3xl overflow-hidden shadow hover:shadow-xl transition">
-                    <div class="h-56 bg-cover bg-center" style="background-image: url('https://picsum.photos/id/201/800/600')"></div>
-                    <div class="p-8">
-                        <h3 class="text-2xl font-semibold mb-3">Classes & Workshops</h3>
-                        <p class="text-stone-600">Hands-on learning about natural remedies, nutrition, and holistic wellness.</p>
-                        <span class="inline-block mt-6 text-emerald-600 group-hover:underline">Learn more →</span>
+                <div class="bg-stone-50 rounded-2xl p-8 shadow-sm hover:shadow-md transition">
+                    <div class="w-12 h-12 bg-teal-100 rounded-full flex items-center justify-center mb-5">
+                        <i class="fa-solid fa-book-open text-teal-700 text-xl"></i>
                     </div>
-                </a>
+                    <h3 class="text-xl font-semibold mb-3 text-teal-900">Tutoring & Academic Support</h3>
+                    <p class="text-stone-600 leading-relaxed">
+                        One-on-one and small-group tutoring in reading, literacy, math, critical thinking, history, and more — including specialized programs like Scripture Explorers and constructivist math for struggling learners.
+                    </p>
+                </div>
 
-                <!-- Service 2 -->
-                <a href="coaching.html" class="group bg-stone-50 rounded-3xl overflow-hidden shadow hover:shadow-xl transition">
-                    <div class="h-56 bg-cover bg-center" style="background-image: url('https://picsum.photos/id/1011/800/600')"></div>
-                    <div class="p-8">
-                        <h3 class="text-2xl font-semibold mb-3">Health Coaching</h3>
-                        <p class="text-stone-600">One-on-one guidance for fibroids, arthritis, hormonal balance, and natural healing.</p>
-                        <span class="inline-block mt-6 text-emerald-600 group-hover:underline">Learn more →</span>
+                <div class="bg-stone-50 rounded-2xl p-8 shadow-sm hover:shadow-md transition">
+                    <div class="w-12 h-12 bg-teal-100 rounded-full flex items-center justify-center mb-5">
+                        <i class="fa-solid fa-chalkboard-user text-teal-700 text-xl"></i>
                     </div>
-                </a>
+                    <h3 class="text-xl font-semibold mb-3 text-teal-900">Curriculum & Program Design</h3>
+                    <p class="text-stone-600 leading-relaxed">
+                        Custom curriculum development and educational program design for families, schools, and non-profits — including hybrid outdoor/indoor learning, debate, American history, nature-based studies, and practical life skills.
+                    </p>
+                </div>
 
-                <!-- Service 3 -->
-                <a href="consulting.html" class="group bg-stone-50 rounded-3xl overflow-hidden shadow hover:shadow-xl transition">
-                    <div class="h-56 bg-cover bg-center" style="background-image: url('https://picsum.photos/id/133/800/600')"></div>
-                    <div class="p-8">
-                        <h3 class="text-2xl font-semibold mb-3">Educational Consulting & Tutoring</h3>
-                        <p class="text-stone-600">Personalized academic support and holistic education programs.</p>
-                        <span class="inline-block mt-6 text-emerald-600 group-hover:underline">Learn more →</span>
+                <div class="bg-stone-50 rounded-2xl p-8 shadow-sm hover:shadow-md transition">
+                    <div class="w-12 h-12 bg-teal-100 rounded-full flex items-center justify-center mb-5">
+                        <i class="fa-solid fa-seedling text-teal-700 text-xl"></i>
                     </div>
-                </a>
+                    <h3 class="text-xl font-semibold mb-3 text-teal-900">Educational Consulting</h3>
+                    <p class="text-stone-600 leading-relaxed">
+                        Guidance for homeschooling families, support with IEPs and individualized learning plans, and non-profit program development that builds confidence, curiosity, and real-world skills.
+                    </p>
+                </div>
             </div>
         </div>
     </section>
 
-    <!-- SIMPLE ABOUT / CALL TO ACTION -->
-    <section class="py-20 bg-emerald-50">
+    <!-- APPROACH -->
+    <section class="py-20 bg-teal-50">
         <div class="max-w-4xl mx-auto px-6 text-center">
-            <p class="text-2xl leading-relaxed text-stone-700">
-                Based in Mount Shasta, California, I combine decades of natural health knowledge with compassionate teaching to help you feel your best and learn with joy.
+            <h2 class="text-3xl font-semibold text-teal-900 mb-6">My Approach</h2>
+            <p class="text-lg text-stone-700 leading-relaxed mb-8">
+                I create learning experiences that are practical, joyful, and confidence-building — whether in a classroom, kitchen, outdoor setting, or over Zoom. 
+                My background includes a Master of Arts in Education from UC Santa Cruz, classroom teaching, curriculum design for alternative education programs, and years of working with diverse learners and families.
             </p>
-            <a href="coaching.html" class="mt-10 inline-block bg-emerald-700 text-white px-12 py-4 rounded-full text-lg font-medium hover:bg-emerald-800 transition">
-                Book a Free Discovery Call
+            <a href="about.html" class="inline-block text-teal-800 font-medium hover:underline">
+                Learn more about my background →
             </a>
+        </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section id="contact" class="py-20 bg-white">
+        <div class="max-w-3xl mx-auto px-6 text-center">
+            <h2 class="text-3xl font-semibold text-teal-900 mb-4">Let’s Connect</h2>
+            <p class="text-stone-600 mb-8">
+                Based in Mount Shasta, California. Available for in-person and remote educational consulting and tutoring.
+            </p>
+            <p class="text-lg">
+                <a href="mailto:creativecultures3@gmail.com" class="text-teal-700 hover:underline font-medium">
+                    creativecultures3@gmail.com
+                </a>
+            </p>
+            <p class="text-stone-500 mt-2">Mount Shasta, CA</p>
         </div>
     </section>
 
     <!-- FOOTER -->
     <footer class="bg-stone-900 text-white py-12">
-        <div class="max-w-6xl mx-auto px-6 grid md:grid-cols-3 gap-8">
-            <div>
-                <div class="flex items-center gap-3 mb-4">
-                    <img src="logo.png" alt="Logo" class="h-10">
-                    <span class="text-2xl font-semibold">Kelly's Consulting</span>
-                </div>
-                <p class="text-stone-400">Natural health • Workshops • Education</p>
-            </div>
-            <div>
-                <h4 class="font-semibold mb-4">Quick Links</h4>
-                <ul class="space-y-2 text-stone-400">
-                    <li><a href="classes.html" class="hover:text-white">Classes & Workshops</a></li>
-                    <li><a href="coaching.html" class="hover:text-white">Health Coaching</a></li>
-                    <li><a href="consulting.html" class="hover:text-white">Educational Consulting</a></li>
-                </ul>
-            </div>
-            <div>
-                <h4 class="font-semibold mb-4">Contact</h4>
-                <p class="text-stone-400">Mount Shasta, California</p>
-                <p class="text-stone-400 mt-2">
-                    <a href="mailto:your@email.com" class="hover:text-emerald-400">your@email.com</a>
-                </p>
-            </div>
-        </div>
-        <div class="text-center text-stone-500 text-sm mt-12">
-            © 2026 Kelly's Consulting • Built with ❤️ and complete control
+        <div class="max-w-6xl mx-auto px-6 text-center">
+            <img src="logo.png" alt="Kelly Dearie" class="h-12 mx-auto mb-4 brightness-0 invert opacity-90">
+            <p class="text-stone-400 text-sm">
+                © 2026 Kelly Dearie · Educational Consulting & Tutoring
+            </p>
         </div>
     </footer>
 
     <script>
-        // Mobile menu toggle
         const btn = document.getElementById('mobile-menu-btn');
         const menu = document.getElementById('mobile-menu');
         btn.addEventListener('click', () => {
