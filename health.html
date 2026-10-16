@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Health Coaching | Kelly Dearie</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <style>
+        .nav-link { transition: all 0.3s; }
+        .nav-link:hover { color: #0f766e; }
+    </style>
+</head>
+<body class="bg-stone-50 text-stone-800 font-sans">
+
+    <!-- NAVBAR -->
+    <nav class="bg-white shadow-sm sticky top-0 z-50">
+        <div class="max-w-6xl mx-auto px-6 py-3 flex items-center justify-between">
+            <a href="index.html" class="flex items-center gap-3">
+                <img src="CONSULTLOGO.png" alt="Kelly Dearie Educational Consulting" class="h-20 md:h-24 w-auto">
+            </a>
+            <div class="hidden md:flex items-center gap-7 text-base font-medium">
+                <a href="index.html" class="nav-link">Home</a>
+                <a href="consulting.html" class="nav-link">Educational Consulting & Tutoring</a>
+                <a href="health.html" class="nav-link text-teal-800">Health Coaching</a>
+                <a href="about.html" class="nav-link">About</a>
+                <a href="index.html#contact" class="nav-link">Contact</a>
+            </div>
+            <button id="mobile-menu-btn" class="md:hidden text-2xl text-teal-800">
+                <i class="fa-solid fa-bars"></i>
+            </button>
+        </div>
+        <div id="mobile-menu" class="hidden md:hidden bg-white border-t py-4">
+            <div class="flex flex-col gap-4 px-6 text-base">
+                <a href="index.html" class="nav-link">Home</a>
+                <a href="consulting.html" class="nav-link">Educational Consulting & Tutoring</a>
+                <a href="health.html" class="nav-link">Health Coaching</a>
+                <a href="about.html" class="nav-link">About</a>
+                <a href="index.html#contact" class="nav-link">Contact</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- HEADER -->
+    <header class="bg-teal-800 text-white py-16">
+        <div class="max-w-4xl mx-auto px-6 text-center">
+            <h1 class="text-3xl md:text-4xl font-semibold mb-4">Health Coaching</h1>
+            <p class="text-teal-100 text-lg">Personalized support for adults and families seeking better health through practical nutrition and sustainable habits.</p>
+        </div>
+    </header>
+
+    <!-- MAIN CONTENT -->
+    <section class="py-16">
+        <div class="max-w-3xl mx-auto px-6 space-y-10">
+
+            <div>
+                <p class="text-lg text-stone-700 leading-relaxed mb-6">
+                    I offer personalized health and wellness coaching for adults and families, with a special focus on practical nutrition and sustainable lifestyle change.
+                </p>
+                <p class="text-lg text-stone-700 leading-relaxed mb-6">
+                    My approach is grounded in real-world experience. After helping my husband recover from two serious illnesses that conventional medicine had considered incurable, I dedicated myself to understanding how food, fermentation, and daily habits can support healing. That journey continues to shape the way I work with clients today.
+                </p>
+            </div>
+
+            <div>
+                <h2 class="text-2xl font-semibold text-teal-900 mb-4">Who I Work With</h2>
+                <ul class="list-disc list-inside space-y-2 text-stone-700">
+                    <li>Adults seeking better energy, digestion, and overall wellness</li>
+                    <li>Families wanting to implement healing or elimination diets</li>
+                    <li>Parents navigating food allergies, sensitivities, and dietary restrictions with their children</li>
+                </ul>
+            </div>
+
+            <div>
+                <h2 class="text-2xl font-semibold text-teal-900 mb-4">What Coaching Looks Like</h2>
+                <p class="text-stone-700 leading-relaxed">
+                    Sessions are practical, compassionate, and tailored to your real life. We focus on clear action steps, meal planning, kitchen confidence, and building habits that last — whether the goal is personal healing or supporting a child’s specialized dietary needs.
+                </p>
+                <p class="text-stone-700 leading-relaxed mt-4">
+                    This work naturally complements my educational consulting and tutoring practice, especially when families are looking for both academic support and guidance around food and health.
+                </p>
+            </div>
+
+            <div class="bg-teal-50 rounded-2xl p-8 text-center">
+                <h3 class="text-xl font-semibold text-teal-900 mb-3">Interested in working together?</h3>
+                <p class="text-stone-700 mb-6">I’d be glad to hear about your goals and how I can support you or your family.</p>
+                <a href="index.html#contact" class="inline-block bg-teal-700 hover:bg-teal-800 text-white px-8 py-3 rounded-full font-medium transition">
+                    Get in Touch
+                </a>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="bg-stone-900 text-white py-12">
+        <div class="max-w-6xl mx-auto px-6 text-center">
+            <img src="CONSULTLOGO.png" alt="Kelly Dearie" class="h-16 mx-auto mb-4 brightness-0 invert opacity-90">
+            <p class="text-stone-400 text-sm">
+                © 2026 Kelly Dearie · Educational Consulting & Tutoring
+            </p>
+        </div>
+    </footer>
+
+    <script>
+        const btn = document.getElementById('mobile-menu-btn');
+        const menu = document.getElementById('mobile-menu');
+        btn.addEventListener('click', () => {
+            menu.classList.toggle('hidden');
+        });
+    </script>
+</body>
+</html>
